@@ -21,8 +21,10 @@ function main() {
       <Router history={history}>
         <Layout>
             <Switch>
-              <Route path='/' exact component={SignIn}/>
-              <Route path='/signup' exact component={SignUp}/>
+              <Route path='/' exact component={SignIn}/>              
+              <Route path='/signup' component={SignUp}/>
+              <Route path='/signin' component={SignIn}/>
+              
             </Switch>
         </Layout>
       </Router>
