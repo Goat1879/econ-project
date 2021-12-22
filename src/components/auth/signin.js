@@ -8,7 +8,15 @@ import * as actions from '../../actions';
 
 class SignIn extends Component {
 
-    
+    componentDidMount() {
+        this.props.setHeaderLinks([]);
+        this.props.setNavbarLinks([]);
+    }
+
+    componentDidMount() {
+        this.props.setHeaderLinks([]);
+        this.props.setNavbarLinks([]);
+    }
 
     onSubmit = (fields) => {
         this.props.signIn(fields);
